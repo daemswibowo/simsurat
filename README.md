@@ -16,7 +16,10 @@ DB_DATABASE=manajemen_surat
 DB_USERNAME=root
 DB_PASSWORD=passwordmysql
 ```
-
+Kemudian jalankan perintah berikut untuk menggenerate key
+```bash
+php artisan key:generate
+```
 # Migrasi Database
 Jalankan perintah berikut untuk generate tabel
 ```bash
