@@ -10,7 +10,7 @@ php composer.phar install
 ```
 
 # Setup Database
-Copy file .env.example dengan .env dan sesuaikan konfigurasi database anda. Contoh
+Copy file .env.example dengan nama .env dan sesuaikan konfigurasi database anda. Contoh
 ```php
 DB_DATABASE=manajemen_surat
 DB_USERNAME=root
@@ -35,3 +35,6 @@ Jadi deh ^_^
 
 # Pengguna
 Untuk demo login dengan menggunakan username/password admin/123456 untuk hak akses admin dan user1/123456 untuk hak akses normal
+
+# License
+This project is licensed under the MIT License - see the [License File](LICENSE) for details
