@@ -27,7 +27,7 @@ Jalankan perintah berikut untuk serve aplikasi
 ```bash
 php artisan serve
 ```
-
+Kemudian akses http://localhost:8000 via browser kesukaan lo
 Jadi deh ^_^
 
 # Pengguna
