@@ -1,5 +1,5 @@
 # SIM SURAT
-Aplikasi Sistem Manajemen Surat Sederhana dengan laravel
+Aplikasi Sistem Manajemen Surat Sederhana dengan laravel v5.5. System requirementsnya liat di sini yah https://laravel.com/docs/5.5/#server-requirements
 
 # Konfigurasi
 Setelah download/clone jalankan perintah berikut untuk menginstall dependency composer via command prompt/terminal etc.
