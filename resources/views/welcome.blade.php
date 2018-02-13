@@ -13,7 +13,7 @@
     <!-- Styles -->
     <style>
     html, body {
-        background-color: #fff;
+        background-color: #9474cc;
         color: #636b6f;
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
@@ -24,7 +24,9 @@
     .full-height {
         height: 100vh;
     }
-
+    p {
+        color: white;
+    }
     .flex-center {
         align-items: center;
         display: flex;
@@ -47,10 +49,11 @@
 
     .title {
         font-size: 84px;
+        color: white;
     }
 
     .links > a {
-        color: #636b6f;
+        color: #fff;
         padding: 0 25px;
         font-size: 12px;
         font-weight: 600;

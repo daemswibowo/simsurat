@@ -15,7 +15,7 @@ $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
 $brand-danger: #bf5329;
-
+$brand-purple: #9474cc;
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-sans-serif: "Raleway", sans-serif;
@@ -24,8 +24,7 @@ $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #fff;
-
+$navbar-default-bg: $brand-purple;
 // Buttons
 $btn-default-color: $text-color;
 
@@ -35,4 +34,5 @@ $input-border-focus: lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
-$panel-default-heading-bg: #fff;
+$panel-default-heading-bg: $brand-purple;
+$panel-default-heading-color: white;

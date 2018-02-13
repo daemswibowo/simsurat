@@ -9,3 +9,27 @@
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "~font-awesome/scss/font-awesome";
 @import "~select2/dist/css/select2.min.css";
+
+a.navbar-brand {
+	color: white !important;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+}
+
+a {
+	color: $brand-purple;
+}
+
+a:hover {
+	color: white;
+}
+
+.nav a:hover {
+	background: $brand-purple !important;
+}
+
+.panel-heading {
+	color: white !important;
+}
