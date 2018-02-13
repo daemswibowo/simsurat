@@ -90,7 +90,7 @@
         <div class="title">
             SIM SURAT
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p>UNIVERSITAS NEGERI GORONTALO</p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
