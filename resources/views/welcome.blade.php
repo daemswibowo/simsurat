@@ -13,7 +13,7 @@
     <!-- Styles -->
     <style>
     html, body {
-        background-color: #fff;
+        background-color: #4fc3f7;
         color: #636b6f;
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
@@ -23,6 +23,10 @@
 
     .full-height {
         height: 100vh;
+    }
+
+    p {
+        color: white;
     }
 
     .flex-center {
@@ -47,6 +51,8 @@
 
     .title {
         font-size: 84px;
+        color: white;
+
     }
 
     .links > a {
@@ -57,6 +63,8 @@
         letter-spacing: .1rem;
         text-decoration: none;
         text-transform: uppercase;
+        color: white;
+        
     }
 
     .m-b-md {
@@ -90,7 +98,7 @@
         <div class="title">
             SIM SURAT
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p>Pengadilan Negeri Gorontalo</p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
