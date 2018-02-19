@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SIM SURAT</title>
+    <title>SIM SURAT | DISHUB KOTA GORONTALO</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -31,7 +31,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <b>SIM</b>SURAT
+                        <img src="{{ asset('img/logo.png') }}" height="35" alt="">
                     </a>
                 </div>
 
