@@ -88,9 +88,9 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('img/logo.png') }}" height="140px" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p><b>SIMSURAT DINAS PARIWISATA KOTA GORONTALO</b></p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>

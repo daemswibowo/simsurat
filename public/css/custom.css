@@ -1,0 +1,7 @@
+.navbar-default, .panel-heading {
+	background: #49A0AA !important;
+}
+
+.navbar-nav, .navbar-brand, .panel-heading {
+	color: white !important;
+}
