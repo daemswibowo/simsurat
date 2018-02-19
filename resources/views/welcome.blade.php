@@ -88,9 +88,9 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('img/logo.jpg') }}" height="100px" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p>Manajemen Surat</p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
