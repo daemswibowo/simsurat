@@ -13,8 +13,8 @@
     <!-- Styles -->
     <style>
     html, body {
-        background-color: #fff;
-        color: #636b6f;
+        background-color: #FF0823;
+        color: #FFF;
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
         height: 100vh;
@@ -48,15 +48,25 @@
     .title {
         font-size: 84px;
     }
-
-    .links > a {
-        color: #636b6f;
-        padding: 0 25px;
+    .links {
+        list-style: none;
+    }
+    .links li {
+        display: inline;
+    }
+    .links li a {
+        background: white;
+        border-radius: 20px;
+        color: #FF0823;
+        padding: 10px;
         font-size: 12px;
         font-weight: 600;
-        letter-spacing: .1rem;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    .links li a:hover {
+        background: #ddd;
     }
 
     .m-b-md {
@@ -88,17 +98,17 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('img/logo.png') }}" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
-
-        <div class="links">
-            <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
-            <a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a>
-            <a href="{{ route('disposisi.index') }}">Daftar Disposisi</a>
-            <a href="{{ route('disposisi.create') }}">Buat Disposisi</a>
-            <a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a>
-        </div>
+        <p><b>SIMSURAT</b> PT. Mimoza Multimedia Gorontalo</p>
+        <br>
+        <ul class="links">
+            <li><a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('disposisi.index') }}">Daftar Disposisi</a></li>
+            <li><a href="{{ route('disposisi.create') }}">Buat Disposisi</a></li>
+            <li><a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a></li>
+        </ul>
     </div>
 </div>
 </body>
