@@ -14,7 +14,7 @@
     <style>
     html, body {
         background-color: #fff;
-        color: #636b6f;
+        color: #281969 !important;
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
         height: 100vh;
@@ -50,7 +50,7 @@
     }
 
     .links > a {
-        color: #636b6f;
+        color: #281969;
         padding: 0 25px;
         font-size: 12px;
         font-weight: 600;
@@ -88,9 +88,9 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('img/logo.png') }}" height="150" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p>SISTEM MANAJEMEN SURAT | SATPOL PP KOTA GORONTALO</p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
