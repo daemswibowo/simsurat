@@ -49,7 +49,14 @@
         font-size: 84px;
     }
 
-    .links > a {
+    .links {
+        padding: 0px;
+    }
+
+    .links li {
+        list-style: none;
+    }
+    .links li a {
         color: #636b6f;
         padding: 0 25px;
         font-size: 12px;
@@ -57,6 +64,11 @@
         letter-spacing: .1rem;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    .links li a:hover {
+        text-decoration: underline;
+        color: #FF0729;
     }
 
     .m-b-md {
@@ -88,16 +100,16 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('logo.png') }}" height="150" alt="">
         </div>
         <p>Sistem Manajemen Surat</p>
 
         <div class="links">
-            <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
-            <a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a>
-            <a href="{{ route('disposisi.index') }}">Daftar Disposisi</a>
-            <a href="{{ route('disposisi.create') }}">Buat Disposisi</a>
-            <a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a>
+            <li><a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('disposisi.index') }}">Daftar Disposisi</a></li>
+            <li><a href="{{ route('disposisi.create') }}">Buat Disposisi</a></li>
+            <li><a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a></li>
         </div>
     </div>
 </div>

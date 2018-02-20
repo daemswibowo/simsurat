@@ -30,8 +30,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        <b>SIM</b>SURAT
+                    <a class="navbar-brand" href="{{ url('/') }}" style="padding-top: 0px;">
+                        <img src="{{ asset('logo.png') }}" height="40" alt="">
                     </a>
                 </div>
 
