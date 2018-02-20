@@ -25,10 +25,6 @@
         height: 100vh;
     }
 
-    p {
-        color: white;
-    }
-
     .flex-center {
         align-items: center;
         display: flex;
