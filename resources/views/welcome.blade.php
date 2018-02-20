@@ -48,15 +48,30 @@
     .title {
         font-size: 84px;
     }
-
-    .links > a {
-        color: #636b6f;
-        padding: 0 25px;
+    .links li {
+        list-style: none;
+        margin: 20px;
+    }
+    .links li a {
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: .1rem;
         text-decoration: none;
         text-transform: uppercase;
+        background: #D86223;
+        transition: all ease-in 0.2s;
+        -webkit-transition: all ease-in 0.2s;
+        -o-transition: all ease-in 0.2s;
+        -moz-transition: all ease-in 0.2s;
+    }
+
+    .links li a:hover {
+        border: 2px solid #D86223;
+        color: #D86223;
+        background: none;
     }
 
     .m-b-md {
@@ -88,16 +103,16 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('logo.png') }}" height="150" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p>Sistem Manajemen Surat | Badan Lingkungan Hidup Kota Gorontalo</p>
 
         <div class="links">
-            <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
-            <a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a>
-            <a href="{{ route('disposisi.index') }}">Daftar Disposisi</a>
-            <a href="{{ route('disposisi.create') }}">Buat Disposisi</a>
-            <a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a>
+            <li><a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('disposisi.index') }}">Daftar Disposisi</a></li>
+            <li><a href="{{ route('disposisi.create') }}">Buat Disposisi</a></li>
+            <li><a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a></li>
         </div>
     </div>
 </div>
