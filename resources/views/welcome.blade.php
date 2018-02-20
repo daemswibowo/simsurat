@@ -50,7 +50,7 @@
     }
 
     .links > a {
-        color: #636b6f;
+        color: #00924A;
         padding: 0 25px;
         font-size: 12px;
         font-weight: 600;
@@ -88,9 +88,9 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('logo.png') }}" height="160" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p>Sistem Manajemen Surat | Kantor Camat Kota Barat</p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
