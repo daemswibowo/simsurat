@@ -50,7 +50,7 @@
     }
 
     .links > a {
-        color: #636b6f;
+        color: #FF0018;
         padding: 0 25px;
         font-size: 12px;
         font-weight: 600;
@@ -88,9 +88,9 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('logo.jpg') }}" height="200" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p>Sistem Manajemen Surat | Selebes Radio Gorontalo</p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
