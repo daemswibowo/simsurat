@@ -1,0 +1,15 @@
+.navbar-default, .panel-heading {
+	background: #00924A !important;
+}
+
+.navbar-brand, .panel-heading, .navbar-nav li a {
+	color: white !important;
+}
+
+.dropdown-menu li a {
+	color: #aaa !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: #00702A;
+}

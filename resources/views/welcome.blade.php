@@ -49,9 +49,20 @@
         font-size: 84px;
     }
 
-    .links > a {
-        color: #636b6f;
-        padding: 0 25px;
+    .links {
+        padding: 0px;
+    }
+
+    .links li {
+        list-style: none;
+        display: inline;
+    }
+
+    .links li a {
+        background: #00924A;
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: .1rem;
@@ -88,16 +99,16 @@
 
     <div class="content">
         <div class="title">
-            SIM SURAT
+            <img src="{{ asset('img/logo.png') }}" width="150" alt="">
         </div>
-        <p>Sistem Manajemen Surat</p>
+        <p><b>SIMSURAT</b> | DINAS PENDIDIKAN KOTA TENGAH</p>
 
         <div class="links">
-            <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
-            <a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a>
-            <a href="{{ route('disposisi.index') }}">Daftar Disposisi</a>
-            <a href="{{ route('disposisi.create') }}">Buat Disposisi</a>
-            <a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a>
+            <li><a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('surat.create') }}">Buat Surat Masuk/Keluar</a></li>
+            <li><a href="{{ route('disposisi.index') }}">Daftar Disposisi</a></li>
+            <li><a href="{{ route('disposisi.create') }}">Buat Disposisi</a></li>
+            <li><a href="{{ url('/surat/laporan') }}">Laporan Surat Masuk/Keluar</a></li>
         </div>
     </div>
 </div>
