@@ -106,7 +106,7 @@
             <img src="{{ asset('logo.jpg') }}" width="150" alt="">
         </div>
 
-        <p><b>SIMSURAT</b> | KEMENTRIAN AGAMA KOTA GORONTALO</p>
+        <p><b>SIMSURAT</b> | STMIK ICHSAN GORONTALO</p>
 
 
         <div class="links">
