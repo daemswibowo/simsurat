@@ -90,7 +90,7 @@
         <div class="title">
             <img src="{{ asset('logo.jpg') }}" height="150" alt="">
         </div>
-        <p>Sistem Manajemen Surat | Puskesmas Dungingi Kota Gorontalo</p>
+        <p>Sistem Manajemen Surat | Puskesmas Kota Barat Kota Gorontalo</p>
 
         <div class="links">
             <a href="{{ route('surat.index') }}">Daftar Surat Masuk/Keluar</a>
