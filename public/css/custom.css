@@ -2,7 +2,14 @@
 	background: #0094CE !important;
 }
 
-.navbar-nav li a, .navbar-brand {
+.navbar-nav li a, .navbar-brand, .panel-heading {
 	color: white !important;
 }
 
+.dropdown-menu li a {
+	color: #aaa !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: #0072ac;
+}
