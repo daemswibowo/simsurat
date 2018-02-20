@@ -5,3 +5,16 @@
 .navbar-brand, .navbar-nav li a, .panel-heading {
 	color: #fff !important;
 }
+
+.dropdown-menu li a {
+	color: #aaa !important;
+}
+
+.navbar-nav li a:hover {
+	background: #b64001 !important;
+	color: white !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: #b64001;
+}
