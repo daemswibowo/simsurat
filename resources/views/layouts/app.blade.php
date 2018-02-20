@@ -31,7 +31,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <b>SIM</b>SURAT
+                       <img src="{{ asset('logo.jpg') }}" style="margin-top: -5px;" height="30" class="pull-left" alt=""> <b>SIM</b>SURAT
                     </a>
                 </div>
 
