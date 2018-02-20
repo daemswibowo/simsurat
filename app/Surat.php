@@ -27,7 +27,7 @@ class Surat extends Model
      *
      * @var array
      */
-    protected $fillable = ['no_surat', 'no_agenda', 'jenis_surat_id', 'tanggal_kirim', 'tanggal_terima', 'pengirim', 'perihal', 'tipe', 'user_id'];
+    protected $fillable = ['no_surat', 'no_agenda', 'jenis_surat_id', 'tanggal_kirim', 'tanggal_terima', 'pengirim', 'perihal', 'tipe', 'user_id','scan'];
 
     public function jenis_surat ()
     {

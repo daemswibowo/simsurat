@@ -58,6 +58,13 @@
         {!! $errors->first('perihal', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
+<div class="form-group {{ $errors->has('scan') ? 'has-error' : ''}}">
+    {!! Form::label('scan', 'Scan', ['class' => 'col-md-4 control-label']) !!}
+    <div class="col-md-6">
+        {!! Form::file('scan', ('' == 'required') ? ['class' => 'form-control'] : ['class' => 'form-control']) !!}
+        {!! $errors->first('scan', '<p class="help-block">:message</p>') !!}
+    </div>
+</div>
 
 <div class="form-group">
     <div class="col-md-offset-4 col-md-4">

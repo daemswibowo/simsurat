@@ -66,6 +66,7 @@ class SuratController extends Controller
             'tipe' => 'required',
             'pengirim' => 'required',
             'perihal' => 'required',
+            'scan' => 'required|file|max:2048'
         ];
 
         if ($request->tipe == 'masuk') {
@@ -73,10 +74,22 @@ class SuratController extends Controller
         }
 
         $request->validate($validation);
+        $file = $request->file('scan');
+        $path = $file->store('public/files');
 
-        $requestData = array_add($request->all(), 'user_id', $request->user()->id);
-        $requestData = array_add($requestData, 'no_agenda', Surat::whereTipe($request->tipe)->count()+1);
-        
+        $requestData = [
+            'no_surat' => $request->no_surat,
+            'jenis_surat_id' => $request->jenis_surat_id,
+            'tanggal_kirim' => $request->tanggal_kirim,
+            'tanggal_terima' => $request->tanggal_terima,
+            'tipe' => $request->tipe,
+            'pengirim' => $request->pengirim,
+            'perihal' => $request->perihal,
+            'scan' => $path,
+            'user_id' => $request->user()->id,
+            'no_agenda' => Surat::whereTipe($request->tipe)->count()+1
+        ];
+
         Surat::create($requestData);
 
         return redirect('surat')->with('flash_message', 'Surat added!');
@@ -121,25 +134,42 @@ class SuratController extends Controller
      */
     public function update(Request $request, $id)
     {
+       
         $validation = [
             'no_surat' => 'required',
-            'no_agenda' => 'required',
             'jenis_surat_id' => 'required',
             'tanggal_kirim' => 'required',
             'tipe' => 'required',
             'pengirim' => 'required',
             'perihal' => 'required',
+            'scan' => 'file|max:2048'
         ];
 
         if ($request->tipe == 'masuk') {
             $validation = array_add($validation, 'tanggal_terima', 'required');
         }
 
-        $request->validate($validation);
-        
-        $requestData = $request->all();
-        
+
         $surat = Surat::findOrFail($id);
+        
+        $requestData = [
+            'no_surat' => $request->no_surat,
+            'jenis_surat_id' => $request->jenis_surat_id,
+            'tanggal_kirim' => $request->tanggal_kirim,
+            'tanggal_terima' => $request->tanggal_terima,
+            'tipe' => $request->tipe,
+            'pengirim' => $request->pengirim,
+            'perihal' => $request->perihal,
+            'user_id' => $request->user()->id,
+        ];
+
+        if ($request->hasFile('scan')) {
+            $file = $request->file('scan');
+            $path = $file->store('public/files');
+            $requestData = array_add($requestData, 'scan', $path);
+            \Storage::delete($surat->scan);
+        }
+        $request->validate($validation);
         $surat->update($requestData);
 
         return redirect('surat')->with('flash_message', 'Surat updated!');
@@ -154,8 +184,9 @@ class SuratController extends Controller
      */
     public function destroy($id)
     {
-        Surat::destroy($id);
-
+        $surat = Surat::findOrFail($id);
+        \Storage::delete($surat->scan);
+        $surat->delete();
         return redirect('surat')->with('flash_message', 'Surat deleted!');
     }
 

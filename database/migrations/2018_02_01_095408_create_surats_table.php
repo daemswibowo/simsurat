@@ -22,6 +22,7 @@ class CreateSuratsTable extends Migration
             $table->date('tanggal_terima')->nullable();
             $table->string('pengirim');
             $table->string('perihal');
+            $table->string('scan');
             $table->enum('tipe', ['masuk','keluar']);
             $table->integer('user_id')->unsigned();
             $table->timestamps();

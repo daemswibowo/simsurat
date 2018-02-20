@@ -55,6 +55,7 @@
                                         <td>{{ $item->perihal }}</td>
                                         <td>Surat {{ $item->tipe }}</td>
                                         <td>
+                                            <a href="{{ \Storage::url($item->scan) }}" target="_blank" class="btn btn-default btn-xs"><i class="fa fa-download"></i> File</a>
                                             <a href="{{ url('/surat/' . $item->id . '/edit') }}" title="Edit Surat"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
                                             {!! Form::open([
                                                 'method'=>'DELETE',
