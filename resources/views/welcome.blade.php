@@ -103,10 +103,10 @@
 
     <div class="content">
         <div class="title">
-            <img src="{{ asset('logo.png') }}" width="150" alt="">
+            <img src="{{ asset('logo.jpg') }}" width="150" alt="">
         </div>
 
-        <p>Pengadilan Negeri Gorontalo</p>
+        <p><b>SIMSURAT</b> | KEMENTRIAN AGAMA KOTA GORONTALO</p>
 
 
         <div class="links">
