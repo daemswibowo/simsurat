@@ -1,3 +1,12 @@
 .navbar-default, .panel-heading {
 	background: #7f0000 !important;
 }
+
+.nav li a {
+	color: #7f0000;
+}
+
+.nav li a:hover {
+	background: #7f0000 !important;
+	color: white !important;
+}
